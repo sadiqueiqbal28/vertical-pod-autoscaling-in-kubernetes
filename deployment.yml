@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: portfolio
-        image: sadiqueiqbal28/portfolio-website
+        image: nginx:latest
         resources:
           requests:
             memory: 8Mi

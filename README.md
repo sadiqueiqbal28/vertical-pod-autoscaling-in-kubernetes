@@ -1,5 +1,5 @@
 # Script to practise Vertical Pod Autscaling
-**As vertical pod autoscaler does not come by default with kubernetes (k8s) installation we need to setup manually.**
+**As vertical pod autoscaler does not come by default with kubernetes (k8s) installation we need to setup manually.**<br/>
 **clone the GitHub repository for VPA**<br/>
 [Repository](https://github.com/kubernetes/autoscaler.git).<br/>
 `git clone https://github.com/kubernetes/autoscaler.git`.<br/>
@@ -8,17 +8,17 @@
 `./hack/vpa-up.sh`.</br>
 **upon successfull installation - Execute**<br/>
 `kubectl get pods -n kube-system | grep vpa`.<br/>
-![Screenshot of successful vpa setup](https://myoctocat.com/assets/images/base-octocat.svg)<br/>
+![Screenshot of successful vpa setup](http://github.com/sadiqueiqbal28/vertical-pod-autoscaling-in-kubernetes/blob/main/images/one.png)<br/>
 **now clone this GitHub repository and change directory**<br/>
-`git clone https://github.com/sadiqueiqbal28/vertical-pod-autoscaling-in-kubernetes.git`
+`git clone https://github.com/sadiqueiqbal28/vertical-pod-autoscaling-in-kubernetes.git`<br/>
 `cd vertical-pod-autoscaling-in-kubernetes`<br/>
-**make script executable**
+**make script executable**<br/>
 `chmod +x script-vpa.sh`<br/>
 **execute the script**<br/>
 `./script-vpa.sh`<br/>
-![Screenshot of running services](https://myoctocat.com/assets/images/base-octocat.svg)<br/>
+![Screenshot of running services](http://github.com/sadiqueiqbal28/vertical-pod-autoscaling-in-kubernetes/blob/main/images/two.png)<br/>
 **watch the metrics of running pod which is pushing the limit defined in deployment**
-![Screenshot of metrics](https://myoctocat.com/assets/images/base-octocat.svg)<br/>
+![Screenshot of metrics](http://github.com/sadiqueiqbal28/vertical-pod-autoscaling-in-kubernetes/blob/main/images/three.png)<br/>
 **after practicing make sure to clean the workspace so it should not occupy your system resources**<br/>
 `kubectl delete ns prod`.<br/>
 #### Thank You

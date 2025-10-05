@@ -1,0 +1,24 @@
+apiVersion: autoscaling.k8s.io/v1
+kind: VerticalPodAutoscaler
+metadata:
+  name: vpa-portfolio
+  namespace: prod
+spec:
+  resourcePolicy:
+    containerPolicies:
+      - containerName: portfolio
+        controlledResources:
+          - cpu
+          - memory
+        maxAllowed:
+          cpu: 512m
+          memory: 512Mi
+        minAllowed:
+          cpu: 4m
+          memory: 32Mi
+  targetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: portfolio
+  updatePolicy:
+    updateMode: Auto

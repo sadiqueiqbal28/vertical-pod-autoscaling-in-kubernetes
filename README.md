@@ -8,7 +8,7 @@
 `./hack/vpa-up.sh`.</br>
 **upon successfull installation - Execute**<br/>
 `kubectl get pods -n kube-system | grep vpa`.<br/>
-![Screenshot of successful vpa setup](http://github.com/sadiqueiqbal28/vertical-pod-autoscaling-in-kubernetes/blob/main/images/one.png)<br/>
+![Screenshot of successful vpa setup](https://github.com/sadiqueiqbal28/vertical-pod-autoscaling-in-kubernetes/blob/main/images/one.png)<br/>
 **now clone this GitHub repository and change directory**<br/>
 `git clone https://github.com/sadiqueiqbal28/vertical-pod-autoscaling-in-kubernetes.git`<br/>
 `cd vertical-pod-autoscaling-in-kubernetes`<br/>
@@ -16,9 +16,9 @@
 `chmod +x script-vpa.sh`<br/>
 **execute the script**<br/>
 `./script-vpa.sh`<br/>
-![Screenshot of running services](http://github.com/sadiqueiqbal28/vertical-pod-autoscaling-in-kubernetes/blob/main/images/two.png)<br/>
+![Screenshot of running services](https://github.com/sadiqueiqbal28/vertical-pod-autoscaling-in-kubernetes/blob/main/images/two.png)<br/>
 **watch the metrics of running pod which is pushing the limit defined in deployment**
-![Screenshot of metrics](http://github.com/sadiqueiqbal28/vertical-pod-autoscaling-in-kubernetes/blob/main/images/three.png)<br/>
+![Screenshot of metrics](https://github.com/sadiqueiqbal28/vertical-pod-autoscaling-in-kubernetes/blob/main/images/three.png)<br/>
 **after practicing make sure to clean the workspace so it should not occupy your system resources**<br/>
 `kubectl delete ns prod`.<br/>
 #### Thank You
